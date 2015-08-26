@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textViewMuscleUpWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MuscleUp"
+        android:textColor="#00cc00"
+        android:textSize="@dimen/mainActivityUserName"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/marginBetweenTextAndInput"
+        android:layout_marginBottom="@dimen/logoMargin"
+        />
+
+    <ImageView
+        android:id="@+id/mainActivityLogoImage"
+        android:layout_width="@dimen/logoSize"
+        android:layout_height="@dimen/logoSize"
+        android:layout_below="@+id/textViewMuscleUpWord"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/muscleuplogo"
+        android:layout_marginBottom="@dimen/marginBetweenTextAndInput"/>
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="@dimen/mainActivityLoginButton"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/marginBetweenTextAndInput"
+        android:ellipsize="start"
+        android:textSize="@dimen/mainActivityUserName"
+        android:background="@drawable/edittextstyle"
+        android:textColor="#000000"
+        android:hint="Enter user name"
+        android:layout_below="@+id/mainActivityLogoImage"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_below="@id/editTextUserName"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter password"
+        android:layout_width="@dimen/mainActivityLoginButton"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/marginBetweenTextAndInput"
+        android:ellipsize="start"
+        android:textSize="@dimen/mainActivityUserName"
+        android:background="@drawable/edittextstyle"
+        android:textColor="#000000"/>
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/mainActivityLoginButton"
+        android:textSize="@dimen/mainActivityUserName"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginBottom="@dimen/marginBetweenTextAndInput"
+        android:background="@drawable/green_button"
+        style="@style/button_text"
+        />
+    <Button
+        android:id="@+id/buttonNewUser"
+        android:layout_width="@dimen/mainActivityLoginButton"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/mainActivityUserName"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonLogin"
+        android:text="Add New User"
+        android:background="@drawable/green_button"
+        style="@style/button_text"/>
+
+
+
+</RelativeLayout>
